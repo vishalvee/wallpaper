@@ -11,15 +11,17 @@
     /*background-image:url("marek-piwnicki-lPp-OrW5lnA-unsplash (1).jpg");
    /* background: linear-gradient(rgba(255, 209, 5, 0.5),rgba(255, 255, 255, 0.3)),url("marek-piwnicki-lPp-OrW5lnA-unsplash (1).jpg");*/
     background-size:cover ; 
-    height: 70Vh;
+    height: 100Vh;
 }
 header{
 display: flex;
-border-bottom: solid rgb(239, 240, 243) 6px;
+/* border-bottom: solid rgb(239, 240, 243) 6px; */
 }
 .face img {
-    width: 180px;
-    margin-left: 84%;
+    width: 500px;
+    margin-left: 67%;
+    margin-top: -7.6%;
+    
 }
 h4{
 
@@ -41,7 +43,7 @@ color: rgb(247, 39, 39);
 ul{
     margin-top: 2.3%;
     width: 50%;
-    margin-left: 20%;
+    margin-left: 38%;
 }
 ul li:hover{
      color: rgb(247, 39, 39)
@@ -96,7 +98,7 @@ nav button{
 .middle {
     background-image:linear-gradient(rgba(0, 0, 0, 0.139),rgba(0, 0, 0, 0.295)), url('marek-piwnicki-lPp-OrW5lnA-unsplash (1).jpg');
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
 }
 .middle h1 {
     color: #531d02;
@@ -105,4 +107,29 @@ nav button{
     font-size: 60px;
     font-family:"algerian";
     padding: 13px;
+}
+form {
+    position: relative;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+.srch input {
+    position: absolute;
+    height: 40px;
+    width: 298px;
+    margin: 80px 0px;
+    margin-left: 616px;
+    border: none;
+    padding: 17px;
+    font-size: 17px;
+    font-family: monospace;
+    color: #718293;
+    border-radius: 10px;
+}
+input:hover 
+{
+color: #330435;
 }
