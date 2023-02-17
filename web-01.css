@@ -4,29 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .top{
     margin: 0px;
+    user-select: none;/*user can not select any text*/
     padding: 0px; 
     background-image: url("alex-perez-pEgsWN0kwbQ-unsplash.jpg");
-    /*background-image:url("marek-piwnicki-lPp-OrW5lnA-unsplash (1).jpg");
-   /* background: linear-gradient(rgba(255, 209, 5, 0.5),rgba(255, 255, 255, 0.3)),url("marek-piwnicki-lPp-OrW5lnA-unsplash (1).jpg");*/
     background-size:cover ; 
     height: 100Vh;
 }
 header{
 display: flex;
-/* border-bottom: solid rgb(239, 240, 243) 6px; */
 }
 .face img {
     width: 500px;
     margin-left: 67%;
-    margin-top: -7.6%;
+    margin-top: -6%;
+    user-select: none;
+pointer-events: none ;
     
 }
 h4{
 
-   border-top: solid #330435 5px  ;
-    
+   border-top: solid #330435 5px  ;   
 }
 h3{
     color: #ffff;
@@ -36,7 +36,8 @@ h3{
     width: 50%;
     padding-top: 1%;
 }
-h3::first-letter{
+/* text ke first letter ko color krna  */
+h3::first-letter{ 
 color: rgb(247, 39, 39);
 
 }
@@ -49,7 +50,7 @@ ul li:hover{
      color: rgb(247, 39, 39)
 }
 ul li{
-padding-right: 4%;
+    padding-right: 4%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #FFFFFF;
     display: inline; /* ek line me likhne ke liye (sidhi line)*/
@@ -79,13 +80,16 @@ nav{
     text-align: center;
     margin-top: 25px;
     background: none;
+
 }
 nav button{
-    font-size: 22px;
+
     border: palegreen;
     border-radius:5px;
-    margin: 10px;
-    padding: 5px;
+text-align: center;
+padding: 0.4%;
+padding-left: 1%;
+padding-right: 1%;
 }
 .tle {
     color: rgb(255, 255, 255);
@@ -95,19 +99,7 @@ nav button{
     width: 2px 3px ;
     margin-bottom: 50px;
 }
-.middle {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.139),rgba(0, 0, 0, 0.295)), url('marek-piwnicki-lPp-OrW5lnA-unsplash (1).jpg');
-    background-size: cover;
-    height: 100vh;
-}
-.middle h1 {
-    color: #531d02;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin-top: 4PX;
-    font-size: 60px;
-    font-family:"algerian";
-    padding: 13px;
-}
+
 form {
     position: relative;
 }
@@ -116,20 +108,50 @@ form {
     display: block;
     margin-top: 0em;
 }
-.srch input {
-    position: absolute;
-    height: 40px;
-    width: 298px;
-    margin: 80px 0px;
-    margin-left: 616px;
-    border: none;
-    padding: 17px;
-    font-size: 17px;
-    font-family: monospace;
-    color: #718293;
-    border-radius: 10px;
-}
+
 input:hover 
 {
 color: #330435;
+}
+NAv i{
+    color: #c30000;
+    font-size: 26px;
+}
+.srch{
+    position: relative;
+    width: 100%;
+}
+#search{
+margin-top: 3%;
+margin-left: 35%;
+width: 30%;
+font-size: 22px;
+padding: 0.4%;
+border-radius: 10px;
+outline: none;
+border: none;
+box-shadow: 0px 0px 32px 2px rgb(108, 108, 108);
+padding-left: 1%;
+padding-top: 0.6%;
+padding-bottom: 0.6%;
+}
+#searchIcon{
+position: absolute;
+top: 64%;
+right: 38%;
+font-size: 20px;
+color: rgb(4,81,91);
+}
+
+/* selected area highlight kr deta hai, when we select something like a hover */
+#search:focus{
+    color: rgb(146, 3, 103); 
+    border: 2px solid rgb(146, 3, 103);
+    /* rgb(4, 81, 91); */
+}
+/* it fix the img in proper size to the backgroung size */
+#profile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
