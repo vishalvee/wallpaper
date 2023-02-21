@@ -113,6 +113,14 @@ input:hover
 {
 color: #330435;
 }
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
 NAv i{
     color: #c30000;
     font-size: 26px;
@@ -138,9 +146,13 @@ padding-bottom: 0.6%;
 #searchIcon{
 position: absolute;
 top: 64%;
-right: 38%;
+right: 36.5%;
 font-size: 20px;
 color: rgb(4,81,91);
+cursor: pointer;
+}
+#searchIcon:hover {
+color: rgb(146, 3, 103); 
 }
 
 /* selected area highlight kr deta hai, when we select something like a hover */

@@ -21,10 +21,8 @@
             <li>CONTACT</li>
         </ul>
     </header>
-            
 <H2 class="Vee">Vishal_Vee</H2>
 <h1 class="tle">DEVELOPER.</h1>
-
 <NAv>
     <BUtton URL="facebook2.png"><i class="fa-brands fa-facebook-f"></i></BUtton>
     <BUtton URL="linkedin2.png"><i class="fa-brands fa-linkedin"></i></BUtton>
@@ -32,13 +30,24 @@
     <BUtton URL="pinterest.png"><i class="fa-brands fa-pinterest"></i></BUtton>
 </NAv>
 <div class="srch">
-    <form action="">
-    <input type="search" placeholder="search..." id="search">
-    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+    <form action="https://unsplash.com/wallpapers ?q">
+    <input type="search" name="q" placeholder="search..." id="search">
+    <i class="fa-solid fa-magnifying-glass" id="searchIcon" onclick="search()"> </i>
     </form>
     </div>  
 <DIv class="face">
     <img src="Veeking.png" alt="" id="profile">
 </DIv> 
+
+<script>
+
+
+const search=()=>{
+let inputvAL=document.getElementById('search');
+console.log('dd');
+    window.location=`https://unsplash.com/s/photos/${inputvAL.value}`
+}
+
+</script>
 </body>
 </html>
